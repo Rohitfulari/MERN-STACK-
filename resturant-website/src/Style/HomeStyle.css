@@ -1,0 +1,113 @@
+.home{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+
+    
+
+}
+.headercontainer{
+    width: auto;
+    margin-left: 30px;
+
+
+}
+.home .headercontainer h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.home .headercontainer p {
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-left: 14%;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.home .headercontainer button{
+    color: black;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    height: 50px;
+    width: 180px;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 27%;
+
+}
+
+.headercontainer button:hover{
+    background-color:rgb(118, 113, 113);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* mobile view */
+@media only screen and (max-width:600px)
+{
+    .home{
+        justify-content: center;
+        align-items: center;
+
+    }
+    .headercontainer{
+        margin-left: 0;
+        border-radius: 10px;
+        width: 275px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #121619;
+        color: antiquewhite;
+    }
+    .headercontainer h1{
+        font-size: 40px;
+        height: 140px;
+        margin: 15px;
+        color: aliceblue;
+
+    }
+     
+}

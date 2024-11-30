@@ -1,0 +1,45 @@
+
+
+.card {
+    margin: 80px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.786);
+    border-radius: 1rem;
+    border: transparent;
+    background-color: #fff; /* Move background color to .card */
+    padding: 10vh 10vh;
+}
+
+@media(max-width:767px) {
+    .card {
+        margin: 3vh auto;
+    }
+}
+
+.full h2 {
+    margin-bottom: 2vh;
+    font-size: 1.5rem; /* Increase heading font size */
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2vh; 
+}
+
+.cart-table th,
+.cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #f2f2f200;
+}
+
+.empty {
+    text-align: center;
+    padding: 10vh;
+}
